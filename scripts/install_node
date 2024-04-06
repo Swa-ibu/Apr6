@@ -1,16 +1,10 @@
-
 #!/bin/bash
 # Update package index
-yum update
-yum install nodejs
-yum install npm
-curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash - &&\
-yum -get install -y nodejs
+sudo yum update -y
 
 # Install Node.js and npm
-yum install -y nodejs 
+sudo yum install -y nodejs npm
+
 # Print Node.js and npm versions
 #node --version
 #npm --version
-chmod +x install_node.sh  # Make the script executable
-./install_node.sh         # Run the script
