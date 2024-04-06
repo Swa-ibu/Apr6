@@ -10,7 +10,7 @@ sudo yum -get install --yes nodejs
 sudo yum -get install --yes build-essential
 
 # Install node-gyp
-sudo npm install -g node-gyp#!/bin/bash
+npm install -g node-gyp#!/bin/bash
 # Update package index
-sudo yum update -y
+yum update -y
 
