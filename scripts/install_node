@@ -2,8 +2,10 @@
 # Update package index
 sudo yum update -y
 
-# Install Node.js and npm
-sudo yum install nodejs npm --enablerepo=epel
+# Install Node.js and npm 
+yum istall curl -y
+curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo yum install nodejs npm -y
 
 # Print Node.js and npm versions
 #node --version
