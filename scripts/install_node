@@ -1,9 +1,14 @@
 
 #!/bin/bash
 # Update package index
-sudo yum -y update
+yum -y update
+yum install npm 
+yum -get update 
+yum -get upgrade
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - 
+
 # Install Node.js and npm
-sudo yum install -y nodejs npm
+yum install -y nodejs 
 # Print Node.js and npm versions
 #node --version
 #npm --version
