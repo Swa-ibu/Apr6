@@ -1,0 +1,11 @@
+
+#!/bin/bash
+# Update package index
+sudo yum -y update
+# Install Node.js and npm
+sudo yum install -y nodejs npm
+# Print Node.js and npm versions
+#node --version
+#npm --version
+#chmod +x install_node.sh  # Make the script executable
+#./install_node.sh         # Run the script
