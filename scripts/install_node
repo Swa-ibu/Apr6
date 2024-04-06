@@ -5,7 +5,8 @@ yum -y update
 yum install npm 
 yum -get update 
 yum -get upgrade
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - 
+curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash - &&\
+yum -get install -y nodejs
 
 # Install Node.js and npm
 yum install -y nodejs 
