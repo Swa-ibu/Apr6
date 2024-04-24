@@ -8,4 +8,4 @@ sed -i '/AuthorizedKeysCommand /s/.*/AuthorizedKeysCommand \/usr\/local\/bin\/ge
 sed -i '/AuthorizedKeysCommandUser /s/.*/AuthorizedKeysCommandUser root/g' /etc/ssh/sshd_config
 service sshd restart
 
-yum install -y aws-cfn-bootstrap-1.4
+yum install -y aws-cfn-bootstrap
