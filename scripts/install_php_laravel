@@ -2,7 +2,7 @@
 cd /var/www/html
 amazon-linux-extras install php7.3=7.3.13
 yum -y update
-sudo yum install php-gd php-mbstring php-xml php-dom php-intl php-simplexml -y
+yum install php-gd php-mbstring php-xml php-dom php-intl php-simplexml -y
 curl -s https://getcomposer.org/installer | php
 php composer.phar install
 mv composer.phar /usr/local/bin/composer
